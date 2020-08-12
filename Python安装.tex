@@ -1,0 +1,65 @@
+%导言
+\documentclass[UTF8]{ctexart} %article book report letter 用于确定文档类型
+% \usepackage{ctex}	  %使用了 ctexart就不需要使用 ctex了		  %用于解决中文
+\usepackage[a4paper]{geometry}
+\usepackage{xcolor}
+\usepackage{accsupp}	
+\newcommand{\emptyaccsupp}[1]{\BeginAccSupp{ActualText={}}#1\EndAccSupp{}}
+\usepackage{listings}
+\definecolor{commentcolor}{RGB}{85,139,78}
+\definecolor{stringcolor}{RGB}{206,145,108}
+\definecolor{keywordcolor}{RGB}{34,34,250}
+\definecolor{backcolor}{RGB}{220,220,220}
+
+\title{Python的安装}
+\author{作者：江浩}
+\lstset{						%高亮代码设置
+	language=python, 					%Python语法高亮
+	linewidth=0.9\linewidth,      		%列表list宽度
+	%basicstyle=\ttfamily,				%tt无法显示空格
+	commentstyle=\color{commentcolor},	%注释颜色
+	keywordstyle=\color{keywordcolor},	%关键词颜色
+	stringstyle=\color{stringcolor},	%字符串颜色
+	%showspaces=true,					%显示空格
+	numbers=left,						%行数显示在左侧
+	numberstyle=\tiny\emptyaccsupp,		%行数数字格式
+	numbersep=5pt,						%数字间隔
+	frame=single,						%加框
+	framerule=0pt,						%不划线
+	escapeinside=@@,					%逃逸标志
+	emptylines=1,						%
+	xleftmargin=3em,					%list左边距
+	backgroundcolor=\color{backcolor},	%列表背景色
+	tabsize=4,							%制表符长度为4个字符
+	gobble=4							%忽略每行代码前4个字符
+}
+
+\date{\today}
+%正文
+\begin{document}
+\maketitle
+\tableofcontents
+	
+    \section{安装前置工作}
+        \subsection{确认操作系统以及操作系统的类型}
+
+		\subsection{选择对应的版本号}
+    \section{安装过程}
+    \section{常见的IDE和IDE的选择}
+        \subsection{IDLE}
+        \subsection{Visual Studio Code}
+            \subsubsection{下载安装}
+			\subsubsection{插件安装}
+	%字体族设置 
+	\textrm{Songti}
+			Python
+			安装
+
+			Python标准是正确的
+
+			Docstring
+			
+			Better Comments
+			
+			Kite
+\end{document}
